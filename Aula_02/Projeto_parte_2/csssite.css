@@ -1,0 +1,21 @@
+.t1 {
+    color: darkblue;
+}
+.t2{
+    color: blue;
+}
+
+.parte_1{
+    background-color: cornflowerblue;
+}
+
+#background{
+    background-color: cornflowerblue;
+}
+
+.parte_1 :hover{
+    background-color: mintcream;
+}
+p{
+    color: #073763;
+}
