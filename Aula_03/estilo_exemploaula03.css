@@ -1,0 +1,11 @@
+.body{background-color: hotpink;}
+.dotted{border: 5px dotted  hotpink;}
+.dashed{border-style: dashed;}
+.solid{border-style: solid;}
+.margin{margin: 10px;}
+.padding{padding: 10px;}
+.radius{border-radius: 20px;}
+.shadow{box-shadow: 5px 5px gray;}
+.width{ width: 200px}
+.display_inline{display: inline;}
+.display_block{display: block;}
