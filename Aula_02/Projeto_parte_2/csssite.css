@@ -1,26 +1,26 @@
 .t1 {
-    color: darkblue;
+  color: darkblue;
 }
-.t2{
-    color: blue;
-}
-
-body{
-    background-color: cornflowerblue;
+.t2 {
+  color: blue;
 }
 
-#background{
-    background-color: cornflowerblue;
+body {
+  background-color: cornflowerblue;
 }
 
-.parte_1 :hover{
-    background-color: mintcream;
-}
-p{
-    color: #073763;
+#background {
+  background-color: cornflowerblue;
 }
 
-table{
-    color: midnightblue;
-    font-size: 18pt;
+.parte_1 :hover {
+  background-color: mintcream;
+}
+p {
+  color: #073763;
+}
+
+table {
+  color: midnightblue;
+  font-size: 18pt;
 }
