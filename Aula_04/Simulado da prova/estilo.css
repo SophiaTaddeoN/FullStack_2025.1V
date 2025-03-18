@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#cabecalho{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+.caixaroxa {
+    background-color: blueviolet;
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+    color: white;
+
+}
+
+#txt01 div{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+   
+#txt02 div{
+   
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+ 
+.imgs div{
+    justify-content: center;
+}
+
+
+.links {
+    text-align:  center;
+}    
+
+

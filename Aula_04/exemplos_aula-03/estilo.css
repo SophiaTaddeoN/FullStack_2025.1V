@@ -1,0 +1,18 @@
+.flex-container{
+    background-color: blue;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.flex-container div{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+#d5{
+    order: 1;   
+}
