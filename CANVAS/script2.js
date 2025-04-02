@@ -1,11 +1,10 @@
-let canvas= document.getElementById('canvas');
+let canvas= document.getElementById('canva1');
 let ctx = canvas.getContext('2d');
 
 function quadrado(color1, str1, x1, y1, h1, w1){
     ctx.beginPath();
     ctx.lineWidth = 5;
     ctx.fillStyle = color1;
-    ctx.strokeStyle = str1;
     ctx.fillRect(x1,y1,h1,w1);
     ctx.closePath();
 }
@@ -29,6 +28,17 @@ function linha(){
     ctx.lineTo(150,300);
     ctx.stroke();
 }
- 
-quadrado('yellow', "crimson", 60,50,70,70)
-quadrado("blue" ,"crimson", 80, 40, 100,100)
+
+// quadrados azul e vermelho
+quadrado('blue', "black", 0,0,45,45)
+quadrado("red", "black",255,0,45,45)
+
+//quadrados petros
+quadrado("black",'black',270,270,30,30)
+quadrado("black",'black',270,240,30,30)
+quadrado("black",'black',240,270,30,30)
+
+//quadradso amarelos
+quadrado("yellow",'black',0,270,30,30)
+quadrado("yellow",'black',0,240,30,30)
+quadrado("yellow",'black',30,270,30,30)
