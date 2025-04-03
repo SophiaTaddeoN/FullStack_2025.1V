@@ -43,54 +43,8 @@ function text(font, cor, texto, x5, y5) {
   ctx.fillStyle = cor;
   ctx.fillText(texto, x5, y5);
 }
-// quadrados azul e vermelho
-quadrado("blue", 0, 0, 45, 45);
-quadrado("red", 255, 0, 45, 45);
 
-//quadrados petros
-quadrado("black", 270, 270, 30, 30);
-quadrado("black", 270, 240, 30, 30);
-quadrado("black", 240, 270, 30, 30);
-
-//quadradso amarelos
-quadrado("yellow", 0, 270, 30, 30);
-quadrado("yellow", 0, 240, 30, 30);
-quadrado("yellow", 30, 270, 30, 30);
-
-//quadrados perto da linha
-quadrado("red", 110, 149, 40, 40);
-quadrado("aqua", 0, 150, 30, 30);
-quadrado("aqua", 0, 120, 30, 30);
-quadrado("aqua", 270, 135, 30, 30);
-
-//linhas
-linha("green", 0, 150, 300, 150);
-linha("blue", 0, 0, 150, 150);
-linha("red", 300, 0, 150, 150);
-linha("black", 150, 150, 150, 270);
-
-//bolas
-circulos(150, 115, 15, 0, 2, "aqua", "blue");
-circulos(75, 225, 15, 0, 2, "yellow", "green");
-circulos(225, 225, 15, 0, 2, "yellow", "green");
-circulos(150, 300, 40, 0, Math.PI, "aquamarine", "green", true);
-
-//arcos
-arco(150, 150, 60, 1 * Math.PI, 0, "green"); //arco central pela metade
-arco(150, 150, 80, 1 * Math.PI, 1.25 * Math.PI, "green"); //primeiro arco até a linha em 45 graus
-arco(150, 150, 80, 1.75 * Math.PI, 0, "green"); //segundo arco até a linha em 45 graus
-arco(150, 300, 60, 1.5 * Math.PI, 0, "green"); //pequeno arco inferior
-arco(150, 300, 80, 1 * Math.PI, 1.5 * Math.PI, "green"); //grande arco inferior
-arco(150, 150, 60, 1 * Math.PI, 0, "Green");
-
-//texto
-text("25px Arial", "black", "Canvas", 150, 70);
-
-/////////////////////////////////////////////////////////////////////////////
-
-let canvas2 = document.getElementById("canva2");
-let ctx2 = canvas2.getContext("2d");
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 function quadrado2(color1, x1, y1, width1, height1) {
   ctx2.beginPath();
   ctx2.lineWidth = 5;
@@ -149,6 +103,55 @@ function triangulo(cor, corltri, x1, y1, lx1, ly1, lx2, ly2, lx3, ly3) {
   ctx2.fill();
   ctx2.stroke();
 }
+////////////////////////////CANVAS 1///////////////////////////////
+// quadrados azul e vermelho
+quadrado("blue", 0, 0, 45, 45);
+quadrado("red", 255, 0, 45, 45);
+
+//quadrados petros
+quadrado("black", 270, 270, 30, 30);
+quadrado("black", 270, 240, 30, 30);
+quadrado("black", 240, 270, 30, 30);
+
+//quadradso amarelos
+quadrado("yellow", 0, 270, 30, 30);
+quadrado("yellow", 0, 240, 30, 30);
+quadrado("yellow", 30, 270, 30, 30);
+
+//quadrados perto da linha
+quadrado("red", 110, 149, 40, 40);
+quadrado("aqua", 0, 150, 30, 30);
+quadrado("aqua", 0, 120, 30, 30);
+quadrado("aqua", 270, 135, 30, 30);
+
+//linhas
+linha("green", 0, 150, 300, 150);
+linha("blue", 0, 0, 150, 150);
+linha("red", 300, 0, 150, 150);
+linha("black", 150, 150, 150, 270);
+
+//bolas
+circulos(150, 115, 15, 0, 2, "aqua", "blue");
+circulos(75, 225, 15, 0, 2, "yellow", "green");
+circulos(225, 225, 15, 0, 2, "yellow", "green");
+circulo2("aquamarine", "green", 150, 300, 40, 0 * Math.PI, 2 * Math.PI);
+
+//arcos
+arco(150, 150, 60, 1 * Math.PI, 0, "green"); //arco central pela metade
+arco(150, 150, 80, 1 * Math.PI, 1.25 * Math.PI, "green"); //primeiro arco até a linha em 45 graus
+arco(150, 150, 80, 1.75 * Math.PI, 0, "green"); //segundo arco até a linha em 45 graus
+arco(150, 300, 60, 1.5 * Math.PI, 0, "green"); //pequeno arco inferior
+arco(150, 300, 80, 1 * Math.PI, 1.5 * Math.PI, "green"); //grande arco inferior
+arco(150, 150, 60, 1 * Math.PI, 0, "Green");
+
+//texto
+text("25px Arial", "black", "Canvas", 150, 70);
+
+/////////////////////////////// CANVAS 2 //////////////////////////////////////////////
+
+let canvas2 = document.getElementById("canva2");
+let ctx2 = canvas2.getContext("2d");
+
 //quadrado
 quadrado2("gray", 0, 220, 200, 500);
 quadrado2("RoyalBlue", 0, 220, 100, 41);
@@ -167,4 +170,5 @@ circulo2("Green", "green", 50, 150, 25, 0 * Math.PI, 2 * Math.PI);
 circulo2("Green", "green", 250, 180, 25, 0 * Math.PI, 2 * Math.PI);
 circulo2("yellow", "yellow", 240, 80, 35, 0 * Math.PI, 2 * Math.PI);
 
+//triangulo
 triangulo("	#FF4040", "	#FF4040", 110, 130, 150, 90, 190, 130, 110, 130);
