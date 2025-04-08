@@ -1,0 +1,18 @@
+*{
+    background-color: pink;
+}
+
+#canva1{
+    background-color: white;
+    border: 2px black solid ;
+}
+
+#centro{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
