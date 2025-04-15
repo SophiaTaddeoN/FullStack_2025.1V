@@ -1,6 +1,9 @@
 let canvas = document.getElementById("canva1");
 let ctx = canvas.getContext("2d");
 
+let canvas2 = document.getElementById("canva2");
+let ctx2 = canvas2.getContext("2d");
+
 function quadrado(color1, x1, y1, h1, w1) {
   ctx.beginPath();
   ctx.lineWidth = 5;
@@ -134,7 +137,7 @@ linha("black", 150, 150, 150, 270);
 circulos(150, 115, 15, 0, 2, "aqua", "blue");
 circulos(75, 225, 15, 0, 2, "yellow", "green");
 circulos(225, 225, 15, 0, 2, "yellow", "green");
-circulo2("aquamarine", "green", 150, 300, 40, 0 * Math.PI, 2 * Math.PI);
+circulos(150, 300, 40, 0,2,"aquamarine", "green");
 
 //arcos
 arco(150, 150, 60, 1 * Math.PI, 0, "green"); //arco central pela metade
@@ -149,8 +152,7 @@ text("25px Arial", "black", "Canvas", 150, 70);
 
 /////////////////////////////// CANVAS 2 //////////////////////////////////////////////
 
-let canvas2 = document.getElementById("canva2");
-let ctx2 = canvas2.getContext("2d");
+
 
 //quadrado
 quadrado2("gray", 0, 220, 200, 500);
