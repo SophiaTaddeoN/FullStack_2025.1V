@@ -1,7 +1,3 @@
-.centro {
-  justify-content: center;
-}
-
 .t1 {
   color: darkblue;
 }
@@ -17,7 +13,7 @@ body {
   background-color: cornflowerblue;
 }
 
-.parte_1 :hover {
+.centro :hover {
   background-color: mintcream;
 }
 p {
@@ -27,4 +23,11 @@ p {
 table {
   color: midnightblue;
   font-size: 18pt;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
