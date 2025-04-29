@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro</title>
+    <link href="estilogpt.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cadastro</h2>
+      <form action="/cadastro" method="POST">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input
+          type="text"
+          name="login"
+          placeholder="Nome de usuário"
+          required
+        />
+        <input type="password" name="senha" placeholder="Senha" required />
+        <input type="date" name="nascimento" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

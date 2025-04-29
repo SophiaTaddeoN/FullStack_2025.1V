@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
     <title>Resposta</title>
-    <link rel="stylesheet" href="Aula_09/style.css">
-</head>
-<body>
-    <h1>RESPOSTA</h1>
-    <p>Nome: xxxx</p>
-    <p>Login: yyyy</p>
-    <p>Senha: zzzz</p>
-    <p>Nascimento: ddmmyyyy</p>
-</body>
+    <link
+      href="/Aula_02/Projeto_parte_2/Aula_09/estilogtp.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= status %></h1>
+      <% if (nome) { %>
+      <p>Nome: <%= nome %></p>
+      <% } %> <% if (login) { %>
+      <p>Login: <%= login %></p>
+      <% } %> <% if (nasc) { %>
+      <p>Nascimento: <%= nasc %></p>
+      <% } %>
+      <a href="/login">Voltar para o login</a>
+    </div>
+  </body>
 </html>
