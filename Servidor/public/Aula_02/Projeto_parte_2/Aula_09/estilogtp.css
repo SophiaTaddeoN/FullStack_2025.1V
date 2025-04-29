@@ -43,3 +43,9 @@ button {
 button:hover {
   background-color: #005fa3;
 }
+
+
+.center{
+  display: flex;
+  justify-content: center;
+}

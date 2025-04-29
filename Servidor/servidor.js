@@ -7,6 +7,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const users = []; // Banco de dados em memória
 
+const uri = 'mongodb+srv://sophiataddeonasc:<db_password>@mongodb.kfnurgf.mongodb.net/?retryWrites=true&w=majority&appName=MongoDB'
+
 // Configurações
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -85,3 +85,21 @@ const server = http.createServer(app);
 server.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`.rainbow);
 });
+
+
+var dbo = client.db("exemplo_bd");
+var customers = dbo.createCollection("customers",);
+
+app.post("/cadastrar_usuario", function(req, resp) {
+  var data = { db_nome: req.body.nome, db_login: req.body.login, db_senha: req.body.senha };
+
+  usuarios.insertOne(data, function (err) {
+    console.log(err)
+    if (err) {
+      resp.render('resposta_usuario', {resposta: "Erro ao cadastrar usuário!"})
+    }else {
+      resp.render('resposta_usuario', {resposta: "Usuário cadastrado com sucesso!"})        
+    };
+  });
+ 
+});
