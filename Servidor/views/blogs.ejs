@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Posts do Blog</title>
+    <link
+      rel="stylesheet"
+      href="/Aula_02/Projeto_parte_2/Aula_10/StyleAula10.css"
+    />
+  </head>
+  <body>
+    <h1>Posts do Blog</h1>
+
+    <a href="/Cadastrar_post.html">Criar novo post</a>
+
+    <% if (posts.length > 0) { %> <% posts.forEach(post => { %>
+    <div class="post-container">
+      <h2><%= post.titulo %></h2>
+      <p><strong>Resumo:</strong> <%= post.resumo %></p>
+      <p><%= post.conteudo %></p>
+    </div>
+    <% }) %> <% } else { %>
+    <p>Não há posts cadastrados ainda.</p>
+    <% } %>
+  </body>
+</html>
