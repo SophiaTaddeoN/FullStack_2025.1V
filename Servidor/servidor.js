@@ -6,8 +6,8 @@ const mongodb = require("mongodb");
 const path = require("path");
 
 const MongoClient = mongodb.MongoClient;
-const uri =
-  "mongodb+srv://sophiataddeonasc:George20@mongodb.kfnurgf.mongodb.net/blog";
+// const uri =
+ 
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
