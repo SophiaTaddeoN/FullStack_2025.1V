@@ -6,7 +6,7 @@ const mongodb = require("mongodb");
 const path = require("path");
 
 const MongoClient = mongodb.MongoClient;
-// const uri =
+const uri = "mongodb+srv://sophiataddeonasc:George20@mongodb.kfnurgf.mongodb.net/blog";
  
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
